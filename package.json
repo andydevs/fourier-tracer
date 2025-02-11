@@ -1,0 +1,21 @@
+{
+  "name": "fourier-tracer",
+  "version": "1.0.0",
+  "description": "Library for generating animations of tracing SVG's using Fourier Series expansions",
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "tsc",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "devserver": "npx webpack-dev-server"
+  },
+  "author": "Anshul Kharbanda",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "npx webpack-dev-server",
+			"options": {
+				"cwd": "${workspaceFolder}/test"
+			},
+			"label": "Dev Server",
+			"detail": "Run Development Server"
+		},
+		{
+			"type": "shell",
+			"command": "npx tsc --watch",
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"label": "TSC Watch",
+			"detail": "Run TypeScript Compiler in Watch Mode"
+		},
+		{
+			"dependsOn": ["Dev Server", "TSC Watch"],
+			"label": "Dev Environment",
+			"detail": "Run Development Environment"
+		}
+	]
+}
