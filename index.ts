@@ -1,6 +1,5 @@
-import { thing } from "./example";
 
 
-export function start() {
-    window.alert(thing)
+export function createSeriesFromPath(pathstr:string) {
+    
 }

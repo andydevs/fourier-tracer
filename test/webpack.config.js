@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     entry: './app/index.js',
@@ -16,8 +16,8 @@ module.exports = {
     },
     devtool: 'source-map',
     plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Test Fourier Trace'
-        })
+        new CopyWebpackPlugin({ patterns: [
+            path.resolve(__dirname, 'index.html')
+        ] })
     ]
 };
